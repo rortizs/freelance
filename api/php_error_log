@@ -1,0 +1,10 @@
+[16-Jan-2025 18:56:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'id_video_project' at row 1 in /Users/richardortiz/workspace/contractor/api/models/post.model.php:39
+Stack trace:
+#0 /Users/richardortiz/workspace/contractor/api/models/post.model.php(39): PDOStatement->execute()
+#1 /Users/richardortiz/workspace/contractor/api/controllers/post.controller.php(20): PostModel::postData('projects', Array)
+#2 /Users/richardortiz/workspace/contractor/api/routes/services/post.php(112): PostController::postData('projects', Array)
+#3 /Users/richardortiz/workspace/contractor/api/routes/routes.php(83): include('/Users/richardo...')
+#4 /Users/richardortiz/workspace/contractor/api/controllers/routes.controller.php(13): include('/Users/richardo...')
+#5 /Users/richardortiz/workspace/contractor/api/index.php(29): RoutesController->index()
+#6 {main}
+  thrown in /Users/richardortiz/workspace/contractor/api/models/post.model.php on line 39
